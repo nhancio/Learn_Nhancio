@@ -1,0 +1,199 @@
+/* General Styles */
+body {
+  margin: 0;
+  font-family: 'Roboto', sans-serif;
+  line-height: 1.6;
+  background-color: #f0f0f0;
+}
+
+/* Card Styles */
+.feature-card, .workshop-card {
+  background: #ffffff;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Shadow effect */
+  transition: transform 0.2s; /* Transition for hover effect */
+  margin: 20px auto; /* Center the cards */
+  max-width: 800px; /* Limit max width */
+}
+
+.feature-card:hover, .workshop-card:hover {
+  transform: translateY(-5px); /* Lift effect on hover */
+}
+
+/* Navbar */
+.navbar {
+  background: #003366;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  position: fixed;
+  width: 100%;
+  z-index: 50;
+}
+
+.navbar .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 80px;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+}
+
+.nav-links li {
+  margin: 0 10px;
+}
+
+.nav-links a {
+  color: #ffffff;
+  text-decoration: none;
+  padding: 10px 20px;
+  border-radius: 4px;
+  transition: background 0.3s;
+}
+
+.nav-links a:hover {
+  background: #00509e;
+}
+
+/* Hero Section */
+.hero {
+  background: linear-gradient(to right, #00509e, #003366);
+  color: #ffffff;
+  text-align: center;
+  padding: 100px 20px;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.hero h1 {
+  font-size: 3rem; /* Standardized font size */
+  margin-bottom: 20px;
+}
+
+.hero p {
+  font-size: 1.25rem; /* Standardized font size */
+  margin-bottom: 40px;
+}
+
+.hero .btn {
+  background: #007bff;
+  color: #ffffff;
+  padding: 15px 30px; /* Standardized button size */
+  border: none;
+  cursor: pointer;
+  border-radius: 4px;
+  transition: background 0.3s, transform 0.2s;
+}
+
+.hero .btn:hover {
+  background: #00509e;
+  transform: scale(1.05);
+}
+
+/* Features Section */
+.features {
+  padding: 50px 20px;
+  background: #ffffff;
+  text-align: center;
+}
+
+.features-grid {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+}
+
+.feature-card {
+  background: #ffffff;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  width: 100%;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.feature-card:hover {
+  transform: scale(1.05);
+}
+
+/* Workshops Section */
+.workshops {
+  padding: 50px 20px;
+  background: #ffffff;
+  text-align: center;
+}
+
+.workshops-grid {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+}
+
+.workshop-card {
+  background: #ffffff;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  width: 100%;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+/* Footer */
+.footer {
+  background: #003366;
+  color: #ffffff;
+  text-align: center;
+  padding: 20px 0;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.footer-section {
+  margin: 10px;
+}
+
+.footer-section h4 {
+  margin-bottom: 10px;
+}
+
+.footer-section ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-section ul li {
+  margin-bottom: 5px;
+}
+
+.footer-section ul li a {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.footer-section ul li a:hover {
+  text-decoration: underline;
+}
+
+/* Footer Icons */
+.footer-section .social-icons {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+.footer-section .social-icons a {
+  color: #ffffff;
+  font-size: 1.5rem;
+}
