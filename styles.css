@@ -197,3 +197,30 @@ body {
   color: #ffffff;
   font-size: 1.5rem;
 }
+
+/* Media Section */
+.media {
+  padding: 50px 20px;
+  background: #ffffff; /* White background */
+  text-align: center;
+}
+
+.media h2 {
+  font-size: 2rem; /* Standardized font size */
+  margin-bottom: 20px;
+}
+
+.media h3 {
+  font-size: 1.5rem; /* Standardized font size */
+  margin: 20px 0 10px;
+}
+
+.media iframe {
+  max-width: 100%; /* Responsive video */
+  height: auto;
+  margin-bottom: 20px;
+}
+
+.media p {
+  font-size: 1rem; /* Standardized font size */
+}
