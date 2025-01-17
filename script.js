@@ -1,10 +1,10 @@
-document.addEventListener('DOMContentLoaded', () => {
-  const root = document.getElementById('root');
+document.addEventListener("DOMContentLoaded", () => {
+  const root = document.getElementById("root");
 
   root.innerHTML = `
     <nav class="navbar">
       <div class="container">
-        <a href="/" class="logo">Nhancio</a>
+            <a class="navbar-brand d-flex align-items-center me-0" href="/"><img src="Nhancio.png" alt="Nhancio Logo" width="40" height="40" class="d-inline-block align-top"><span class="ms-1 gradient-text">Nhancio</span></a>
         <ul class="nav-links">
           <li><a href="#workshops">Workshops</a></li>
           <li><a href="#ai-tools">AI Tool of the Day</a></li>
@@ -91,9 +91,14 @@ document.addEventListener('DOMContentLoaded', () => {
           <div class="footer-section">
             <h4>Connect</h4>
             <div class="social-icons">
-              <a href="https://www.linkedin.com/company/nhancio" target="_blank">🔗</a>
-              <a href="https://www.instagram.com/nhancio.ai" target="_blank">📷</a>
-              <a href="https://www.twitter.com/soul4tech" target="_blank">🐦</a>
+               <a href="https://www.linkedin.com/company/nhancio" target="_blank">
+              <i class="fa-brands fa-linkedin"></i>
+               </a>
+              <a href="https://www.instagram.com/nhancio.ai" target="_blank">
+              <i class="fa-brands fa-instagram"></i>
+              <a href="https://www.twitter.com/soul4tech" target="_blank">
+              <i class="fa-brands fa-twitter"></i>
+               </a>
             </div>
           </div>
         </div>
@@ -101,12 +106,12 @@ document.addEventListener('DOMContentLoaded', () => {
     </footer>
   `;
 
-  document.querySelector('#register-btn').addEventListener('click', () => {
+  document.querySelector("#register-btn").addEventListener("click", () => {
     window.location.href = "https://ai-workshop-registration.com";
   });
 
-  document.querySelectorAll('.workshop-btn').forEach(button => {
-    button.addEventListener('click', () => {
+  document.querySelectorAll(".workshop-btn").forEach((button) => {
+    button.addEventListener("click", () => {
       const workshopName = button.dataset.workshop;
       alert(`You are registering for ${workshopName}`);
       window.location.href = "https://ai-workshop-registration.com";
