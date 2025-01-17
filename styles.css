@@ -30,7 +30,6 @@ body {
   width: 100%;
   z-index: 50;
 }
-
 .navbar .container {
   display: flex;
   justify-content: space-between;
@@ -58,6 +57,30 @@ body {
 .nav-links a:hover {
   background: #00509e;
 }
+
+.navbar>.container, .navbar>.container-fluid, .navbar>.container-lg, .navbar>.container-md, .navbar>.container-sm, .navbar>.container-xl, .navbar>.container-xxl {
+  display: flex
+;
+  flex-wrap: initial;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* logo Section */
+.gradient-text {
+  -webkit-text-fill-color: #0000;
+  background: linear-gradient(90deg, #00d2ff, #3a7bd5);
+  -webkit-background-clip: text;
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+.ms-1 {
+  margin-left: .25rem !important;
+}
+span {
+  margin-right: 8px;
+}
+
 
 /* Hero Section */
 .hero {
